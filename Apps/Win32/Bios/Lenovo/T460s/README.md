@@ -10,7 +10,8 @@
 
 ## Acronym
 1. ddl - download direct link
-2. util - utilitaire
+2. PS - PowerShell
+3. util - utilitaire
 
 ---
 
