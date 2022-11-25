@@ -102,3 +102,14 @@ Version : 1.57
 1. run\CompanyPortal:
 
 [<img src="https://i.imgur.com/HfOOR90.png">](https://i.imgur.com/HfOOR90.png)
+
+2. checkUp\PS
+````ps1
+PS C:\Users\Admin> gwmi win32_bios
+
+SMBIOSBIOSVersion : N1CET89W (1.57 )
+Manufacturer      : LENOVO
+Name              : N1CET89W (v1.57 )
+SerialNumber      : PC0BSP6P
+Version           : LENOVO - 0
+````
