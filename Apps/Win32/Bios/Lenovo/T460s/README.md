@@ -9,7 +9,8 @@
 ---
 
 ## Acronym
-1. util - utilitaire
+1. ddl - download direct link
+2. util - utilitaire
 
 ---
 
