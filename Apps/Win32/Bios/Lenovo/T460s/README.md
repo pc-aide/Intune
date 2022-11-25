@@ -68,7 +68,7 @@ catch{
 
 ---
 
-## Apps
+## Intune\Apps
 1. Apps | All apps\Add
 2. App type : Windows app (Win32)
 3. select file : install.intunewin
