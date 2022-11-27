@@ -173,10 +173,7 @@ start IntuneWinAppUtil.exe -args "-c $env:temp\intuneWin32 -s $env:temp\intuneWi
 ## Intune
 1. NewApps\win32
 2. Name : Bios-ThinkStation m93p
-3. Desc.
-````md
-# Bios-ThinkStation m93p
-````
+3. Desc. `# Bios-ThinkStation m93p`
 4. Publisher : Lenovo
 5. Logo
 6. Install command / Uninstall command `powershell -executionpolicy bypass -file Install.ps1`
