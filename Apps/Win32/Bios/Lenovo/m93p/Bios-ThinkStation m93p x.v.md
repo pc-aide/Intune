@@ -21,47 +21,32 @@
 ---
 
 ## Flash Porgram options
+1. wflash2.exe call afuwinx64.exe
 ````txt
-*****************************************************************************
-*                          3. Flash Program Options                         *
-*                                                                           *
-*     wflash2.exe [option1] [option2] ... [optionX]                         *
-*                                                                           *
-*     [OPTIONS]                                                             *
-*     /h               Show help messages.                                  *
-*     /rsmb            Preserve all SMBIOS structures.                      *
-*     /clr             Clear BIOS settings.                                 *
-*     /ign             Ingore BIOS version check.                           *
-*     /sn:nnnnnnn      Update system serial number (up to 20 characters).   *
-*     /csn:nnnnnnn     Update chassis serial number (up to 20 characters).  *
-*     /mtm:nnnnnnn     Update machine type and model number (up to 25       *
-*                      characters).                                         *
-*     /tag:nnnnnnn     Update system asset tag (up to 25 characters).       *
-*     /uuid            The flash utility will generate an Universally       *
-*                      Unique Identifier (UUID), replacing the one that     *
-*                      is currently in the system.                          *
-*     /logo:<filename> Change logo. The max supported size of logo file     *
-*                      is displayed on the screen during the compressing.   *
-*     /cpu             Update Intel CPU microcode.                          *
-*     /reboot          Automatic reboot after all requests done.            *
-*     /pass:nnnnnnn    Input current system password.                       *
-*     /quiet           Operating without physical presence.                 *
-*                                                                           *
-*     The following example shows how to update system asset tag number     *
-*     to "1234567" use command line:                                        *
-*       wflash2.exe /tag:1234567                                            *
-*                                                                           *
-*     The following example shows how to update bios and update system      *
-*     asset tag number by one command:                                      *
-*       wflash2.exe bios.rom /tag:1234567                                   *
-*                                                                           *
-*     The following example shows how to change the power-on logo.          *
-*       wflash2.exe /logo:myfav.bmp                                         *
-*                                                                           *
-*     Note: A flash update image using these program options should be      *
-*           tested carefully before widespread usage.                       *
-*                                                                           *
-*****************************************************************************
+ +---------------------------------------------------------------------------+
+|                 AMI Firmware Update Utility  v5.09.02.1384.07.B608.LV     |
+|      Copyright (C)2017 American Megatrends Inc. All Rights Reserved.      |
++---------------------------------------------------------------------------+
+| Usage: AFUWINx64.EXE <ROM File Name> [Option 1] [Option 2]...             |
+|           or                                                              |
+|        AFUWINx64.EXE <Input or Output File Name> <Command>                |
+|           or                                                              |
+|        AFUWINx64.EXE <Command>                                            |
+| ------------------------------------------------------------------------- |
+| Commands:                                                                 |
+|         /O - Save current ROM image to file                               |
+|         /U - Display ROM File's ROMID                                     |
+|         /S - Refer to Options: /S                                         |
+|         /D - Verification test of given ROM File without flashing BIOS.   |
+|         /A - Refer to Options: /A                                         |
+|       /OAD - Refer to Options: /OAD                                       |
+| /CLNEVNLOG - Refer to Options: /CLNEVNLOG                                 |
+| Options:                                                                  |
+|      /CMD: - Send special command to BIOS. /CMD:{xxx}                     |
+|       /DPC - Don't Check Aptio 4 and Aptio 5 platform.                    |
+|     /MEUL: - Program ME Entire Firmware Block, which supports             |
+|              Production.BIN and PreProduction.BIN files.                  |
+<Press any key to continue>
 ````
 
 ---
