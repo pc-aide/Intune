@@ -76,3 +76,22 @@ Name              : FBKTA5AUS
 SerialNumber      : PC03PK9M
 Version           : LENOVO - 1A50
 ````
+
+---
+
+## install.ps1
+````ps1
+# ver : 27-11-2022
+
+$ErrorActionPreference = "stop"
+$Log_file = "MAJ_Bios_Lenovo.xt"
+
+# /rsmb --Preserve all SMBIOS structure
+try{
+    Suspend-BitLocker -RebootCount 1
+    start wflash2.exe -args "IMAGEFB.ROM /rsmb /quiet /reboot" `
+        -RedirectStandardOutput $env:ProgramData\$Log_file -wait -winDowStyle Hidden
+}catch{
+    $_ | out-file $env:ProgramData\$Log_file
+}
+````
