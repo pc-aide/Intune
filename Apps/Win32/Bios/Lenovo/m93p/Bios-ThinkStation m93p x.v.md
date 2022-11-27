@@ -94,7 +94,7 @@ $Log_file = "MAJ_Bios_Lenovo.xt"
 
 # /rsmb --Preserve all SMBIOS structure
 try{
-    Suspend-BitLocker -RebootCount 1
+    Suspend-BitLocker c: -RebootCount 1
     start wflash2.exe -args "IMAGEFB.ROM /rsmb /quiet /reboot" `
         -RedirectStandardOutput $env:ProgramData\$Log_file -wait -winDowStyle Hidden
 }catch{
@@ -142,3 +142,10 @@ start IntuneWinAppUtil.exe -args "-c $env:temp\intuneWin32 -s $env:temp\intuneWi
 16. Value : `FBKTE0A`
 17. Associated with a 32-bit app on 64-bit clients : no
 18. Assignments\Add group : Intune_Desktop_M93p_Lenovo
+
+---
+
+## companyPortal
+1. run\companyPortal:
+
+2. force sync from the client or Intune 
