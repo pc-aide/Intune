@@ -100,7 +100,7 @@ try{
     # /sp --Preserve setup setting
     # /r --Preserve ALL SMBIOS structure during programming 
     # /q --Silent execution
-    start afuwinx64.exe -args "IMAGEFB.ROM /sp /r /q" `
+    start afuwinx.exe -args "IMAGEFB.ROM /sp /r /q" `
         -RedirectStandardOutput $env:ProgramData\$Log_file -wait -winDowStyle Hidden
 }catch{
     $_ | out-file $env:ProgramData\$Log_file
