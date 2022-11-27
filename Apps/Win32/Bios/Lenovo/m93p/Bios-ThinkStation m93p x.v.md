@@ -21,7 +21,36 @@
 ---
 
 ## Flash Porgram options
-1. wflash2.exe call afuwinx64.exe
+1. te
+````txt
+Lenovo Firmware Update Utility 4.3.2
+(C) Copyright 1984-2012, Lenovo Group. All Rights Reserved.
+
+Usage1: Operating in default mode (only for DOS system)
+   wflash2.exe <BIOS file name>
+Usage2: Update BIOS and other data.
+   wflash2.exe <BIOS file name> [arg1] [arg2]...
+Usage3: Update other data without updating BIOS.
+   wflash2.exe [arg1] [arg2]...
+
+Arguments:
+   /rsmb              Preserve all SMBIOS structures
+   /clr               Clear BIOS settings
+   /ign               Ignore BIOS version check
+   /mtm:nnnnnnn       Update system Machine Type and Model
+   /sn:nnnnnnn        Update system Serial Number
+   /csn:nnnnnnn       Update Chassis Serial Number
+   /tag:nnnnnnn       Update Asset Tag
+   /uuid              Generate and update system UUID
+   /cpu               Update Intel CPU microcode
+   /logo:<file name>  Change logo
+   /quiet             Operating without physical presence
+   /reboot            Automaticly reboot after all requests done
+   /pass:nnnnnnn      Input current system password****
+````
+
+
+2. wflash2.exe call afuwinx64.exe
 ````txt
  +---------------------------------------------------------------------------+
 |                 AMI Firmware Update Utility  v5.09.02.1384.07.B608.LV     |
