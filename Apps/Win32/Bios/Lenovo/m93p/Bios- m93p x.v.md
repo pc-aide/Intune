@@ -8,3 +8,6 @@
 ---
 
 ## Group
+1. Name : Intune_Deploy_M93p
+2. Type : Dynamic device
+3. Query : `(device.deviceModel -eq "10AAA16JAU")`
