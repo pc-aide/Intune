@@ -199,3 +199,18 @@ start IntuneWinAppUtil.exe -args "-c $env:temp\intuneWin32 -s $env:temp\intuneWi
 1. run\companyPortal:
 
 2. force sync from the client or Intune 
+
+3. installed
+
+[<img src="https://i.imgur.com/mH4OTwV.png">](https://i.imgur.com/mH4OTwV.png)
+
+4. after
+````ps1
+ gwmi win32_bios
+
+SMBIOSBIOSVersion : FBKTE0AUS
+Manufacturer      : LENOVO
+Name              : FBKTE0AUS
+SerialNumber      : PC03PK9M
+Version           : LENOVO - 31453030
+````
