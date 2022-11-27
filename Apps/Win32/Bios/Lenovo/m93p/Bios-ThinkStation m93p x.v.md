@@ -21,7 +21,7 @@
 ---
 
 ## Flash Porgram options
-1. te
+1. twflash2.exe :
 ````txt
 Lenovo Firmware Update Utility 4.3.2
 (C) Copyright 1984-2012, Lenovo Group. All Rights Reserved.
@@ -48,6 +48,13 @@ Arguments:
    /reboot            Automaticly reboot after all requests done
    /pass:nnnnnnn      Input current system password****
 ````
+
+* option /reboot not work, it call a popUp to close the apps ... !?
+````ps1
+start wflash2.exe -args "IMAGEFB.ROM /rsmb /quiet /reboot" `
+````
+
+[<img src="https://i.imgur.com/WohIXXT.png">](https://i.imgur.com/WohIXXT.png)
 
 
 2. wflash2.exe call afuwinx64.exe
@@ -182,7 +189,7 @@ start IntuneWinAppUtil.exe -args "-c $env:temp\intuneWin32 -s $env:temp\intuneWi
 13. Value name : BIOSVersion
 14. Detection method : String comparison
 15. Operator : Equals
-16. Value : `FBKTE0A`
+16. Value : `FBKTE0AUS`
 17. Associated with a 32-bit app on 64-bit clients : no
 18. Assignments\Add group : Intune_Desktop_M93p_Lenovo
 
