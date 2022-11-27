@@ -46,8 +46,26 @@
 |       /DPC - Don't Check Aptio 4 and Aptio 5 platform.                    |
 |     /MEUL: - Program ME Entire Firmware Block, which supports             |
 |              Production.BIN and PreProduction.BIN files.                  |
+|         /Q - Silent execution                                             |
+|         /X - Don't Check ROM ID                                           |
+|       /CAF - Compare ROM file's data with Systems is different or         |
+|              not, if not then cancel related update.                      |
+|         /S - Display current system's ROMID                               |
+|       /JBC - Don't Check AC adapter and battery                           |
+|  /HOLEOUT: - Save specific ROM Hole according to RomHole GUID.            |
+|              NewRomHole1.BIN /HOLEOUT:GUID                                |
+|        /SP - Preserve Setup setting.                                      |
+|         /R - Preserve ALL SMBIOS structure during programming             |
+|        /Rn - Preserve SMBIOS type N during programming(n=0-255)           |
+|         /B - Program Boot Block                                           |
+|         /P - Program Main BIOS                                            |
+|         /N - Program NVRAM                                                |
+|         /K - Program all non-critical blocks.                             |
+|        /Kn - Program n'th non-critical block(n=0-15).                     |
+|     /HOLE: - Update specific ROM Hole according to RomHole GUID.          |
+|              NewRomHole1.BIN /HOLE:GUID                                   |
 <Press any key to continue>
-````
+ ````
 
 ---
 
