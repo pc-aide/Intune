@@ -1,4 +1,4 @@
-# Bios-ThinkStation m93p x.v
+# Bios-ThinkStation m93p 2022
 
 ---
 
