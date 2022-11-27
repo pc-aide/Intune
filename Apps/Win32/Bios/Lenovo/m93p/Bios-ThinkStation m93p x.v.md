@@ -14,7 +14,7 @@
 ---
 
 ## Group
-1. Name : Intune_Deploy_M93p
+1. Name : Intune_Desktop_M93p_Lenovo
 2. Type : Dynamic device
 3. Query : `(device.deviceModel -eq "10AAA16JAU")`
 
@@ -80,6 +80,12 @@ Version           : LENOVO - 1A50
 ---
 
 ## install.ps1
+1. extract Flash bios folder
+
+[<img src="https://i.imgur.com/PsHqQzY.png">](https://i.imgur.com/PsHqQzY.png)
+
+
+2. install.ps1
 ````ps1
 # ver : 27-11-2022
 
@@ -95,3 +101,44 @@ try{
     $_ | out-file $env:ProgramData\$Log_file
 }
 ````
+
+---
+
+## intuneWinAppUtil
+````ps1
+.\IntuneWinAppUtil.exe -v
+1.8.4.0
+
+# -c --source_folder
+# -s --source_setup_file
+# -o --output_folder
+# -q --quiet
+start IntuneWinAppUtil.exe -args "-c $env:temp\intuneWin32 -s $env:temp\intuneWin32\install.ps1 -o $env:temp\intuneWin32 -q"
+````
+
+[<img src="https://i.imgur.com/nhwtrJe.png">](https://i.imgur.com/nhwtrJe.png)
+
+---
+
+## Intune
+1. NewApps\win32
+2. Name : Bios-ThinkStation m93p
+3. Desc.
+````md
+# Bios-ThinkStation m93p
+````
+4. Publisher : Lenovo
+5. Logo
+6. Install command / Uninstall command `powershell -executionpolicy bypass -file Install.ps1`
+7. Install behavior : system
+8. Device restart behavior : App Install may force a device restart
+9. Operating system architecture : x64
+10. Minimum operating system : 20h04
+11. Detection rules\Rule type : Registry
+12. Key path : HKEY_LOCAL_MACHINE\HARDWARE\DESCRIPTION\System\BIOS
+13. Value name : BIOSVersion
+14. Detection method : String comparison
+15. Operator : Equals
+16. Value : `FBKTE0A`
+17. Associated with a 32-bit app on 64-bit clients : no
+18. Assignments\Add group : Intune_Desktop_M93p_Lenovo
