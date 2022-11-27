@@ -96,6 +96,12 @@ Arguments:
 <Press any key to continue>
  ````
 
+1. option /reboot not work, it ask popUp close the apps ... !?
+````ps1
+start wflash2.exe -args "IMAGEFB.ROM /rsmb /quiet /reboot"
+````
+
+
 ---
 
 ## before
@@ -129,8 +135,11 @@ try{
     # /sp --Preserve setup setting
     # /r --Preserve ALL SMBIOS structure during programming 
     # /q --Silent execution
-    start AFUWIN.exe -args "IMAGEFB.ROM /sp /r /q" `
+    # start .\AFUWIN.EXE -args "IMAGEFB.ROM /p /n /sp /r /q" -NoNewWindow
+    # Time : 1m23s
+    start wflash2.exe -args "IMAGEFB.ROM /rsmb /quiet" `
         -RedirectStandardOutput $env:ProgramData\$Log_file -wait -winDowStyle Hidden
+    Restart-Computer -Force
 }catch{
     $_ | out-file $env:ProgramData\$Log_file
 }
