@@ -1,4 +1,4 @@
-# Bios-ThinkPad T460s
+# Bios-ThinkPad T460s 1.57
 
 ---
 
