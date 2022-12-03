@@ -126,7 +126,7 @@ Do you want to specify catalog folder (Y/N)?n
 ---
 
 ## Test
-1. Forced sync from the client or the Intune (Time: ~6m)
+1. Forced sync from the client(run\companyPortal:) or the Intune (Time: ~6m)
 2. Install newBios (~2min)
 3. after
 ````ps1
@@ -138,3 +138,10 @@ Name              : 9SKT9CAUS
 SerialNumber      : MJVHTXA
 Version           : LENOVO - 1620
 ````
+4. installed
+
+[<img src="https://i.imgur.com/uXfhquo.png">](https://i.imgur.com/uXfhquo.png)
+
+5. deviceName\manageApps
+
+[<img src="https://i.imgur.com/ivwR90t.png">](https://i.imgur.com/ivwR90t.png)
