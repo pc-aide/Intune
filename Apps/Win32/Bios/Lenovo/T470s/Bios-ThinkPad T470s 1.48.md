@@ -55,3 +55,66 @@ catch{
     $_ | out-file $env:ProgramData\$Log_file
 }
 ````
+
+[<img src="https://i.imgur.com/J9mLGzl.png">](https://i.imgur.com/J9mLGzl.png)
+
+---
+
+## IntuneWinApputil.exe
+````ps1
+# 1.8.4.0
+.\IntuneWinAppUtil.exe
+Please specify the source folder: $env:temp
+Please specify the setup file: $env:temp\install.ps1
+Please specify the output folder: $env:temp
+Do you want to specify catalog folder (Y/N)?n
+````
+
+[<img src="https://i.imgur.com/yshawYi.png">](https://i.imgur.com/yshawYi.png)
+
+---
+
+## Intune
+1. Apps\Add\AppType : Windows app (Win32)
+2. select file : install.intunewin
+3. Name : Bios-ThinkPad T470s 1.48
+4. Desc: `# Bios-ThinkPad T470s 1.48`
+5. Publisher : Lenovo
+6. Logo : <takeIt_googleImag>
+7. Install command : `powershell -executionpolicy bypass -file Install.ps1`
+8. Uninstall command : `powershell -executionpolicy bypass -file Install.ps1`
+9. Install behavior : System
+10. OS arch. : 64-bit
+11. Min. OS : 2004
+12. Rule format\Manually configure detection rules\Add\Rule type : Registry
+13. Key path : `HKEY_LOCAL_MACHINE\HARDWARE\DESCRIPTION\System\BIOS`
+14. Value name : `BIOSVersion`
+15. Detection method : String comparison
+16. Operator : Equals
+17. Value : `N1WET69W (1.48 )`
+18. Assignments\Add group: Intune_laptop_T470s
+19. Create
+
+---
+
+## Test
+1. run\companyPortal:
+2. force sync on the client or Intune (Time : ~5m)
+3. SCT_flash_uti_for_lenovo.jpg (Time: ~5m)
+
+[<img src="https://i.imgur.com/xTE6SHa.jpg">](https://i.imgur.com/xTE6SHa.jpg)
+
+4. Installed
+
+[<img src="https://i.imgur.com/S1fKStk.png">](https://i.imgur.com/S1fKStk.png)
+
+5. bios
+````ps1
+gwmi win32_bios
+
+SMBIOSBIOSVersion : N1WET69W (1.48 )
+Manufacturer      : LENOVO
+Name              : N1WET69W (1.48 )
+SerialNumber      : PC0SVZ9N
+Version           : LENOVO - 1480
+````
