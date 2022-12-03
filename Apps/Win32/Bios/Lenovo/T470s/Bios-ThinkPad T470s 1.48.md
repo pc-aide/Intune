@@ -30,6 +30,7 @@ Version           : LENOVO - 1330
 
 ## Extract
 1. Ext n1wuj41w
+2. take `N1WET69W` = use for detection in the Intune (app)
 
 [<img src="https://i.imgur.com/gUwuvvJ.png">](https://i.imgur.com/gUwuvvJ.png)
 
