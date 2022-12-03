@@ -118,3 +118,10 @@ Name              : N1WET69W (1.48 )
 SerialNumber      : PC0SVZ9N
 Version           : LENOVO - 1480
 ````
+
+---
+
+## Report
+1. Intune\Device\<DeviceName>\Managed Apps\
+
+[<img src="https://i.imgur.com/sz7ehoW.png"](https://i.imgur.com/sz7ehoW.png)
