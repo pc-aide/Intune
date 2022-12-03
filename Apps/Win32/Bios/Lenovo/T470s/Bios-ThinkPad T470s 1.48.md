@@ -93,7 +93,7 @@ Do you want to specify catalog folder (Y/N)?n
 15. Detection method : String comparison
 16. Operator : Equals
 17. Value : `N1WET69W (1.48 )`
-18. Assignments\Add group: Intune_laptop_T470s
+18. Assignments\Required\Add group: Intune_laptop_T470s
 19. Create
 
 ---
