@@ -125,4 +125,4 @@ Version           : LENOVO - 1480
 ## Report
 1. Intune\Device\<DeviceName>\Managed Apps\
 
-[<img src="https://i.imgur.com/sz7ehoW.png"](https://i.imgur.com/sz7ehoW.png)
+[<img src="https://i.imgur.com/sz7ehoW.png">](https://i.imgur.com/sz7ehoW.png)
