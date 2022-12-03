@@ -109,7 +109,7 @@ Do you want to specify catalog folder (Y/N)?n
 
 [<img src="https://i.imgur.com/S1fKStk.png">](https://i.imgur.com/S1fKStk.png)
 
-5. bios
+5. after
 ````ps1
 gwmi win32_bios
 
