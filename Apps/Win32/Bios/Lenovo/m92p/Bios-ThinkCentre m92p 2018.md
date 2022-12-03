@@ -75,7 +75,7 @@ try{
      # /rsmb --Preserve all SMBIOS structures
      # /reboot --Automaticly reboot after all requests done # not work popUp as the same m93p
     Suspend-Bitlocker c: -RebootCount 1
-    start .\wflash2.exe -args 'IMAGE9S.CAP /quiet' `
+    start .\wflash2.exe -args 'IMAGE9S.CAP /rsmb /quiet' `
         -RedirectStandardOutput $env:ProgramData\$Log_file -Wait -WindowStyle Hidden
     Restart-Computer -force
 }
