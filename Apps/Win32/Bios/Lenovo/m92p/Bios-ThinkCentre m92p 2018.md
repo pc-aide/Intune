@@ -144,4 +144,4 @@ Version           : LENOVO - 1620
 
 5. deviceName\manageApps
 
-[<img src="https://i.imgur.com/ivwR90t.png">](https://i.imgur.com/ivwR90t.png)
+[<img src="https://i.imgur.com/HBqy8ah.png">](https://i.imgur.com/HBqy8ah.png)
