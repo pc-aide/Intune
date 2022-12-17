@@ -1,4 +1,4 @@
-# Bios-ThinkPad T450s 1.37
+# Bios-ThinkPad T450s 1.37 (2019)
 
 ---
 
@@ -110,3 +110,9 @@ start IntuneWinAppUtil.exe -args "-c $env:temp -s $env:temp\install.ps1 -o $env:
 3. Installed
 
 [<img src="https://i.imgur.com/9EkhXD2.png">](https://i.imgur.com/9EkhXD2.png)
+
+---
+
+## List UEFI Bios
+
+[<img src="https://i.imgur.com/EyE2XJu.png">](https://i.imgur.com/EyE2XJu.png)
