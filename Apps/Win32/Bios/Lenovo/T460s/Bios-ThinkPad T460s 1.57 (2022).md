@@ -1,4 +1,4 @@
-# Bios-ThinkPad T460s 1.57
+# Bios-ThinkPad T460s 1.57 (2022)
 
 ---
 
@@ -73,12 +73,8 @@ catch{
 1. Apps | All apps\Add
 2. App type : Windows app (Win32)
 3. select file : install.intunewin
-4. Name : Bios-ThinkPad T460s
-5. Desc:
-````md
-# Bios-ThinkPad T460s
-Version : 1.57
-````
+4. Name : Bios-ThinkPad T460s 1.57 (2022)
+5. Desc: `# Bios-ThinkPad T460s 1.57 (2022)`
 6. Publisher : Lenovo
 7. App Version : 1
 8. Program\Install command : `powershell -executionpolicy bypass -file Install.ps1`
