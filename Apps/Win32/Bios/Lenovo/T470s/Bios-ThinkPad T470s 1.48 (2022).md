@@ -1,4 +1,4 @@
-# Bios-ThinkPad T470s 1.48
+# Bios-ThinkPad T470s 1.48 (2022)
 
 ---
 
@@ -78,8 +78,8 @@ Do you want to specify catalog folder (Y/N)?n
 ## Intune
 1. Apps\Add\AppType : Windows app (Win32)
 2. select file : install.intunewin
-3. Name : Bios-ThinkPad T470s 1.48
-4. Desc: `# Bios-ThinkPad T470s 1.48`
+3. Name : Bios-ThinkPad T470s 1.48 (2022)
+4. Desc: `# Bios-ThinkPad T470s 1.48 (2022)`
 5. Publisher : Lenovo
 6. Logo : <takeIt_googleImag>
 7. Install command : `powershell -executionpolicy bypass -file Install.ps1`
