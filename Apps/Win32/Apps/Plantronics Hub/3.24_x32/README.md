@@ -24,7 +24,7 @@ A client application that allows users to control the settings on their Plantron
 ## Program
 1. Install\command `PlantronicsHubInstaller.exe /install /quiet /norestart HIDEDESKTOPSHORTCUT=1 /log %ProgramData%\InstallPlantronicsHub3.24_x32.log`
 
-* PendingReboot : yes
+* PendingReboot : yes -- for install & uninstall
 
 * Warning : duplicate log files :
 
