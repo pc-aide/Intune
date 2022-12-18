@@ -33,7 +33,7 @@ A client application that allows users to control the settings on their Plantron
 
 2. Unisntall\command `"C:\ProgramData\Package Cache\{28b4b465-8fc2-4598-8f73-7abad4728a70}\PlantronicsHubBootstrapper.exe" /uninstall /silent /log %ProgramData%\UninstallPlantronicsHub3.24_x32.log`
 
-3. Install behavior : sytem
+3. Install behavior : System
 
 4. Device restart behavior : Intune will force a mandatory device restart
 
