@@ -40,7 +40,7 @@ A client application that allows users to control the settings on their Plantron
 ---
 
 ## Requirements
-1. OS Arc. x64
+1. OS Arch. x64
 2. Min. OS : 2004
 
 ---
