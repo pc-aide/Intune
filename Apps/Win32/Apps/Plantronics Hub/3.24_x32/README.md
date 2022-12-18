@@ -52,3 +52,11 @@ A client application that allows users to control the settings on their Plantron
 4. Detection method : Version comparison
 5. Operator : Greter than or equal to
 6. Value : `3.24.53524.36336`
+
+---
+
+## Test
+1. run\companyPortal:
+2. Installed
+
+[<img src="https://i.imgur.com/tz6mM44.png">](https://i.imgur.com/tz6mM44.png)
