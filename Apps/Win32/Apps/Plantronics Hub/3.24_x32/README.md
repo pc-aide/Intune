@@ -17,7 +17,7 @@ A client application that allows users to control the settings on their Plantron
 ````
 3. Publisher : Poly
 4. Ver : 3.24.53524.36336
-5. logo : <img src="https://d3bql97l1ytoxn.cloudfront.net/app_resources/179154/overview/img6875211839127717565-2x.png" alt="isolated" width="100"/>
+5. logo : <img src="https://d3bql97l1ytoxn.cloudfront.net/app_resources/179154/overview/img6875211839127717565-2x.png" width="50"/>
 
 ---
 
