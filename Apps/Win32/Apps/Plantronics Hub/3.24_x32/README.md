@@ -8,4 +8,9 @@
 
 ---
 
-## 
+## Install
+command `PlantronicsHubInstaller.exe /install /quiet /norestart HIDEDESKTOPSHORTCUT=1 /log %ProgramData%\InstallPlantronicsHub3.24_x32.log`
+
+Warning : duplicate log files
+
+[<img src="https://i.imgur.com/PgtEZvc.png">](https://i.imgur.com/PgtEZvc.png)
