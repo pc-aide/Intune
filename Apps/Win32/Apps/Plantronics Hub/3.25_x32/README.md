@@ -103,5 +103,5 @@ A client application that allows users to control the settings on their Plantron
 
 ---
 
-## Case 3 | old ver not exist
+### Case 3 | old ver not exist
 1. 
