@@ -163,3 +163,17 @@ start IntuneWinAppUtil.exe -args "-c c:\temp -s c:\temp\install.ps1 -o c:\temp -
 
 ## Test
 1. run\companyPortal: 
+
+---
+
+### Error-220
+````md
+SCT Flash Utility for Lenovo
+ for Windows V1.0.3.0
+Copyright (c) 2011-2015 Phoenix Technologies Ltd.
+Copyright (c) 2011-2015 Lenovo Group Limited.
+
+Error: power status information is not provided by current BIOS.
+
+ERROR 220 - Failed at power status check! Status = 221.
+````
