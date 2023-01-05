@@ -1,4 +1,4 @@
-# Bios-ThinkStation m93p FBKTA5AUS (2021)
+# Bios-ThinkStation m93p FBKTE0A (2022)
 
 ---
 
