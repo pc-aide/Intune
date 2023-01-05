@@ -103,7 +103,7 @@ wsbr     GUID filename    Write a binary file to specific sub-region.
 
 2. install.ps1
 ````ps1
-# ver: 03-01-2023
+# ver: 05-01-2023
  
 $Log_file = 'MAJ_Bios_lenovo.txt'
 
@@ -114,7 +114,7 @@ try{
      # -cbp      threshold        Check battery power in percentage.
      # -silent --Silent operation (no beeps)
     Suspend-Bitlocker c: -RebootCount 1
-    start .\WinFlash64.exe -args '-cbp 50 -v -silent -file GJETA4WW\$01DF000.FL1' `
+    start .\WinFlash64.exe -args '-cbp 40 -v -silent -file GJETA4WW\$01DF000.FL1' `
         -RedirectStandardOutput $env:ProgramData\$Log_file -Wait -WindowStyle Hidden
 }
 catch{
