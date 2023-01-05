@@ -172,8 +172,8 @@ start IntuneWinAppUtil.exe -args "-c $env:temp\intuneWin32 -s $env:temp\intuneWi
 
 ## Intune
 1. NewApps\win32
-2. Name : Bios-ThinkStation m93p FBKTA5AUS (2021)
-3. Desc. `# Bios-ThinkStation m93p FBKTA5AUS (2021)`
+2. Name : Bios-ThinkStation m93p FBKTE0AUS (2022)
+3. Desc. `# Bios-ThinkStation m93p FBKTE0AUS (2022)`
 4. Publisher : Lenovo
 5. Logo
 6. Install command / Uninstall command `powershell -executionpolicy bypass -file Install.ps1`
