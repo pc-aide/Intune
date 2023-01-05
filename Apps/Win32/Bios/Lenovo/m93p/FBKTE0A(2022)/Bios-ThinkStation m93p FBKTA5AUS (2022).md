@@ -212,3 +212,17 @@ SerialNumber      : PC03PK9M
 Version           : LENOVO - 31453030
 ````
 5. MAJ_Bios_Lenovo.txt
+````txt
++---------------------------------------------------------------------------+
+|                 AMI Firmware Update Utility  v5.09.02.1384.07.B608.LV     |
+|      Copyright (C)2017 American Megatrends Inc. All Rights Reserved.      |
++---------------------------------------------------------------------------+
+
+Lenovo Firmware Update Utility 4.3.2
+(C) Copyright 1984-2012, Lenovo Group. All Rights Reserved.
+
+afuwin.exe IMAGEFB.ROM /p /n /r /sp /q 
+Processing update BIOS, please wait...
+
+Update process successfully completed.
+````
