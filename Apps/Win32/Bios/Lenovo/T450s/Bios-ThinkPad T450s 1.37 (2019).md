@@ -38,8 +38,9 @@ Version           : LENOVO - 1370
 
 ## ps1
 ````ps1
-# ver: 17-12-2022
- 
+# ver: 05-01-2022
+
+$ErrorActionPreference = "stop" 
 $Log_file = 'MAJ_Bios_lenovo.txt'
 
 try{
