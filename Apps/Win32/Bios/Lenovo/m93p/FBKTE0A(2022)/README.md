@@ -44,9 +44,10 @@ try{
     # /sp --Preserve setup setting
     # /r --Preserve ALL SMBIOS structure during programming 
     # /q --Silent execution
+    # /ign --Ignore BIOS version chec, if we have installed 2021
     # start .\AFUWIN.EXE -args "IMAGEFB.ROM /p /n /sp /r /q" -NoNewWindow
     # Time : 1m23s
-    start wflash2.exe -args "IMAGEFB.ROM /rsmb /quiet" `
+    start wflash2.exe -args "IMAGEFB.ROM /rsmb /ign /quiet" `
         -RedirectStandardOutput $env:ProgramData\$Log_file -wait -winDowStyle Hidden
     Restart-Computer -Force
 }catch{
@@ -92,3 +93,16 @@ start .\IntuneWinAppUtil.exe -args "-c $env:temp -s $env:temp\install.ps1 -o $en
 
 ## Test
 1. force sync\run\companyPortal:
+
+
+---
+
+### Same current bios rom image
+````md
+
+Lenovo Firmware Update Utility 4.3.2
+(C) Copyright 1984-2012, Lenovo Group. All Rights Reserved.
+
+BIOS ROM file is older than (or same as) the current BIOS ROM image.
+Continue any way? (Y/y or N/n only)
+````
