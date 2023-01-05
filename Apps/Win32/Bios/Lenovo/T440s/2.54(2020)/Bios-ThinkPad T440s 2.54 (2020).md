@@ -108,6 +108,7 @@ wsbr     GUID filename    Write a binary file to specific sub-region.
 $Log_file = 'MAJ_Bios_lenovo.txt'
 
 try{
+     # if fail update bios ex: AC Power (error 220 / 221), so the bitlocker will resume automatiquement without reboot
      # -cac --Check AC power is on
      # -v --Enable flash verification (Error: power status information is not provided by current BIOS.) + ERROR 220 - Failed at power status check! Status = 221.
      # -file --Indicate BIOS image file for flash
