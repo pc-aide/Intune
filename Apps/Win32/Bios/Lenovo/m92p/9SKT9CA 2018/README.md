@@ -1,4 +1,4 @@
-# Bios-ThinkCentre m92p 2018
+# Bios-ThinkCentre m92p 9SKT9CA 2018
 
 ---
 
