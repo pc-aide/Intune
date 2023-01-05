@@ -182,8 +182,8 @@ start IntuneWinAppUtil.exe -args "-c $env:temp\intuneWin32 -s $env:temp\intuneWi
 9. Operating system architecture : x64
 10. Minimum operating system : 20h04
 11. Detection rules\Rule type : Registry
-12. Key path : HKEY_LOCAL_MACHINE\HARDWARE\DESCRIPTION\System\BIOS
-13. Value name : BIOSVersion
+12. Key path : `HKEY_LOCAL_MACHINE\HARDWARE\DESCRIPTION\System\BIOS`
+13. Value name : `BIOSVersion`
 14. Detection method : String comparison
 15. Operator : Equals
 16. Value : `FBKTE0AUS`
