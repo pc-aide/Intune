@@ -191,3 +191,7 @@ Name              : GJETA4WW (2.54 )
 SerialNumber      : PC02LMK0
 Version           : LENOVO - 2540
 ````
+
+* installed :
+
+[<img src="https://i.imgur.com/1Sjewuj.png">](https://i.imgur.com/1Sjewuj.png)
