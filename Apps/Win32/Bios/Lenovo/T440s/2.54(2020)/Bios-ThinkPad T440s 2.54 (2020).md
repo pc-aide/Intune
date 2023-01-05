@@ -164,6 +164,7 @@ start IntuneWinAppUtil.exe -args "-c c:\temp -s c:\temp\install.ps1 -o c:\temp -
 
 ## Test
 1. run\companyPortal: 
+2. force sync
 
 ---
 
