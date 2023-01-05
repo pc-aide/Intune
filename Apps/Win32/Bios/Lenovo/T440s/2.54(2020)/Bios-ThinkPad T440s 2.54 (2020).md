@@ -128,7 +128,7 @@ catch{
 ## IntuneWin
 ````ps1
 # -c --setup_folder | -s --setup_file | -o --outfile | -q --quiet
-start IntuneWinAppUtil.exe -args "-c c:\temp -s c:\temp\install.ps1 -o c:\temp -q"
+start IntuneWinAppUtil.exe -args "-c $env:temp -s $env:temp\install.ps1 -o $env:temp -q"
 ````
 
 [<img src="https://i.imgur.com/9rUDl0s.png">](https://i.imgur.com/9rUDl0s.png)
