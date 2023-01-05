@@ -180,3 +180,14 @@ Error: power status information is not provided by current BIOS.
 
 ERROR 220 - Failed at power status check! Status = 221.
 ````
+
+3. after
+````ps1
+gwmi win32_bios
+
+SMBIOSBIOSVersion : GJETA4WW (2.54 )
+Manufacturer      : LENOVO
+Name              : GJETA4WW (2.54 )
+SerialNumber      : PC02LMK0
+Version           : LENOVO - 2540
+````
