@@ -135,7 +135,7 @@ Version           : LENOVO - 1A50
 # ver : 27-11-2022
 
 $ErrorActionPreference = "stop"
-$Log_file = "MAJ_Bios_Lenovo.xt"
+$Log_file = "MAJ_Bios_Lenovo.txt"
 
 try{
     Suspend-BitLocker c: -RebootCount 1
@@ -211,3 +211,4 @@ Name              : FBKTE0AUS
 SerialNumber      : PC03PK9M
 Version           : LENOVO - 31453030
 ````
+5. MAJ_Bios_Lenovo.txt
