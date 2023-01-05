@@ -108,13 +108,13 @@ wsbr     GUID filename    Write a binary file to specific sub-region.
 $Log_file = 'MAJ_Bios_lenovo.txt'
 
 try{
-     # -cac --Check AC power is on, if we are not the right power supply (ex:65w or 90w = error)
-     # -v --Enable flash verification
+     # -cac --Check AC power is on
+     # -v --Enable flash verification (Error: power status information is not provided by current BIOS.) + ERROR 220 - Failed at power status check! Status = 221.
      # -file --Indicate BIOS image file for flash
      # -cbp      threshold        Check battery power in percentage.
      # -silent --Silent operation (no beeps)
     Suspend-Bitlocker c: -RebootCount 1
-    start .\WinFlash64.exe -args '-cbp 40 -v -silent -file GJETA4WW\$01DF000.FL1' `
+    start .\WinFlash64.exe -args '-cac -v -silent -file GJETA4WW\$01DF000.FL1' `
         -RedirectStandardOutput $env:ProgramData\$Log_file -Wait -WindowStyle Hidden
 }
 catch{
