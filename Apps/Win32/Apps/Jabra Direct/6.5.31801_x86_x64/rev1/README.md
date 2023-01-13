@@ -12,7 +12,14 @@
 
 ---
 
-## Settings
+### Updates
+1. no checkUp update
+
+[<img src="https://i.imgur.com/7h03I4x.png">](https://i.imgur.com/7h03I4x.png)
+
+---
+
+### Settings
 1. General
   * Automatic device updte: [default] off
   
