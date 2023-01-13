@@ -98,6 +98,14 @@ A client application that allows users to control the settings on their Plantron
 
 ---
 
+### Settings
+1. To collect anonymous feature usage stat.
+  * default : off
+  
+[<img src="https://i.imgur.com/bmSoGaS.png">](https://i.imgur.com/bmSoGaS.png)
+
+---
+
 ### Case 2 | new overwrite old ?
 1. 
 
