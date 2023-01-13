@@ -17,3 +17,20 @@
   * Automatic device updte: [default] off
   
 [<img src="https://i.imgur.com/VyWXp8X.png">](https://i.imgur.com/VyWXp8X.png)
+
+2. Notification
+ * Fimrware updates & device information
+ 
+````ps1
+# default value : True
+cat "$env:appData\Jabra Direct\config.json" |
+ ConvertFrom-Json |
+ select DirectShowNotification -ExpandProperty DirectShowNotification | 
+ select Key,Value
+
+key                    value
+---                    -----
+DirectShowNotification  True
+````
+
+[<img src="https://i.imgur.com/ehMmEef.png">](https://i.imgur.com/ehMmEef.png)
