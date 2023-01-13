@@ -39,7 +39,7 @@ A client application that allows users to control the settings on their Plantron
 
 * PendingReboot : yes --For install & uninstall
 
-2. Uninstall command : `"C:\ProgramData\Package Cache\{28b4b465-8fc2-4598-8f73-7abad4728a70}\PlantronicsHubBootstrapper.exe" /uninstall /silent /noRestart /log c:\ProgramData\PlantronicsHub3.25_x32_Uninstall.log`
+2. Uninstall command : `"C:\ProgramData\Package Cache\{28b4b465-8fc2-4598-8f73-7abad4728a70}\PlantronicsHubBootstrapper.exe" /uninstall /quiet /noRestart /log c:\ProgramData\PlantronicsHub3.25_x32_Uninstall.log`
 
 3. Instasll behavior : System
 
