@@ -1,4 +1,4 @@
-# Jabra Direct-6.5.31801_x86_x64_rev1
+# Jabra Direct-6.5.31801_x86_rev1
 
 ---
 
