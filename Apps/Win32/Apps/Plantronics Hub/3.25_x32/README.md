@@ -35,11 +35,11 @@ A client application that allows users to control the settings on their Plantron
 ---
 
 ## Program
-1. Install command : `PlantronicsHubInstaller.exe /install /quiet /norestart HIDEDESKTOPSHORTCUT=1`
+1. Install command : `PlantronicsHubInstaller.exe /install /quiet /norestart HIDEDESKTOPSHORTCUT=1 /log c:\ProgramData\PlantronicsHub3.25_x32_Install.log`
 
 * PendingReboot : yes --For install & uninstall
 
-2. Uninstall command : `"C:\ProgramData\Package Cache\{28b4b465-8fc2-4598-8f73-7abad4728a70}\PlantronicsHubBootstrapper.exe" /uninstall /silent`
+2. Uninstall command : `"C:\ProgramData\Package Cache\{28b4b465-8fc2-4598-8f73-7abad4728a70}\PlantronicsHubBootstrapper.exe" /uninstall /silent /noRestart /log c:\ProgramData\PlantronicsHub3.25_x32_Uninstall.log`
 
 3. Instasll behavior : System
 
