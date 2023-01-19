@@ -45,7 +45,6 @@ try{
     Suspend-Bitlocker c: -RebootCount 1
     start wFlashGUIx64.exe -args 'IMAGEM1A.rom /quiet' `
         -RedirectStandardOutput $env:ProgramData\$Log_file -Wait -WindowStyle Hidden
-    Restart-Computer -Force
 }
 catch{
     $_ | out-file $env:ProgramData\$Log_file
