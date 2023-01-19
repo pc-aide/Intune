@@ -84,7 +84,7 @@ O/P folder : $env:temp
 16. Value name : `BIOSVersion`
 17. Detection method : String comparison
 18. Operator : Equals
-19. Value : `M1AJY56USA`
+19. Value : `M1AKT56A`
 20. Assignments : Intune_Deploy_M710q
 
 ---
