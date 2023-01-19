@@ -93,11 +93,11 @@ O/P folder : $env:temp
 1. run\companyPortal:
 2. force sync
 3. reboot
-4. askBitlocker : yes, but the PC reboot more twice, so the cause of the bitlocker ... !?
+4. ask Bitlocker : yes, but the PC reboot more twice, so the cause of the bitlocker ... !?
 
 ---
 
-## after
+## After
 ````ps1
 gwmi win32_bios
 
@@ -107,3 +107,7 @@ Name              : M1AKT56A
 SerialNumber      : MJ06YQ52
 Version           : LENOVO - 1560
 ````
+
+5. installed
+
+[<img src="https://i.imgur.com/FcNbOeR.png">](https://i.imgur.com/FcNbOeR.png)
