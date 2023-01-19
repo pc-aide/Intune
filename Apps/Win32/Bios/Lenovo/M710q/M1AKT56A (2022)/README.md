@@ -93,7 +93,7 @@ O/P folder : $env:temp
 1. run\companyPortal:
 2. force sync
 3. reboot
-4. askBitlocker : yes
+4. askBitlocker : yes, but the PC reboot more twice, so the cause of the bitlocker ... !?
 
 ---
 
