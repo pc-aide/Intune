@@ -38,7 +38,7 @@ Version           : LENOVO - 14D0
 ````ps1
 # ver : 24-01-2023
 
-$Log_file = "MAJ_Bios_Lenovo.txt"
+$Log_file = "Update_Bios_Lenovo.txt"
 
 try{
     Suspend-BitLocker c: -RebootCount 1
