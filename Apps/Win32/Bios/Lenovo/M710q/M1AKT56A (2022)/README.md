@@ -36,17 +36,16 @@ Version           : LENOVO - 14D0
 
 # ps1
 ````ps1
-# ver: 18-01-2023
- 
-$Log_file = 'MAJ_Bios_lenovo.txt'
-$ErrorActionPreference = "stop"
+# ver : 24-01-2023
+
+$Log_file = "MAJ_Bios_Lenovo.txt"
 
 try{
-    Suspend-Bitlocker c: -RebootCount 1
-    start wFlashGUIx64.exe -args 'IMAGEM1A.rom /quiet' `
-        -RedirectStandardOutput $env:ProgramData\$Log_file -Wait -WindowStyle Hidden
-}
-catch{
+    Suspend-BitLocker c: -RebootCount 1
+    # Time : 1m23s
+    # extract, after install & reboot
+    start m1ajy56usa.exe -args "/verysilent /quietflash" -Wait -WindowStyle Hidden
+}catch{
     $_ | out-file $env:ProgramData\$Log_file
 }
 ````
