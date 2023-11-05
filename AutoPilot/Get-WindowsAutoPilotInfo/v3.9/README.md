@@ -28,25 +28,21 @@ Get-PSDrive -PSProvider FileSystem |
 3. AutoPilot.ps1
 ````ps1
 $computerSystem = Get-WmiObject Win32_ComputerSystem
-$manufacturer = $computerSystem.Manufacturer
 $model = $computerSystem.Model
 
-if ($manufacturer -eq "Lenovo") {
-    $computerProduct = Get-WmiObject Win32_ComputerSystemProduct
-    $lenovoModel = $computerProduct.Version
+# Variable pour stocker le préfixe
+$prefix = ""
 
-    if ($lenovoModel -like 'nuc*') {
-        Write-Host "Cet ordinateur est un ordinateur de bureau Lenovo."
-    } else {
-        Write-Host "Cet ordinateur Lenovo a un modèle indéterminé."
-    }
-} elseif ($model -like '*laptop*' -or $model -like '*notebook*') {
-    Write-Host "Cet ordinateur est un ordinateur portable."
+if ($model -like '*laptop*' -or $model -like '*notebook*') {
+    $prefix = "LW"  # Préfixe pour les ordinateurs portables (LW pour Laptop Windows)
 } elseif ($model -like '*surface pro*') {
-    Write-Host "Cet ordinateur est une Surface Pro (laptop)."
-} elseif ($model -like 'surface pro') {
-    Write-Host "Cet ordinateur est une Surface Pro (laptop)."
+    $prefix = "LW"  # Préfixe pour les Surface Pro (LW pour Laptop Windows)
+} elseif ($model -like 'nuc*') {
+    $prefix = "DW"  # Préfixe pour les ordinateurs de bureau (DW pour Desktop Windows)
 } else {
-    Write-Host "Type d'ordinateur indéterminé."
+    $prefix = "XX"  # Préfixe par défaut pour un type d'ordinateur indéterminé (peut être modifié)
 }
+
+# Vous pouvez utiliser la variable $prefix pour d'autres opérations ou affichages.
+Write-Host "Le préfixe de cet ordinateur est $prefix"
 ````
