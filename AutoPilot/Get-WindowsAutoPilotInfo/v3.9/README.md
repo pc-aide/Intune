@@ -42,8 +42,10 @@ if ($manufacturer -eq "Lenovo") {
     }
 } elseif ($model -like '*laptop*' -or $model -like '*notebook*') {
     Write-Host "Cet ordinateur est un ordinateur portable."
-} elseif ($model -like 'nuc*') {
-    Write-Host "Cet ordinateur est un ordinateur de bureau."
+} elseif ($model -like '*surface pro*') {
+    Write-Host "Cet ordinateur est une Surface Pro (laptop)."
+} elseif ($model -like 'surface pro') {
+    Write-Host "Cet ordinateur est une Surface Pro (laptop)."
 } else {
     Write-Host "Type d'ordinateur indéterminé."
 }
