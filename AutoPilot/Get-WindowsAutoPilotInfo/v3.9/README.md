@@ -56,6 +56,6 @@ if (-not $isAdmin) {
     $newComputerName = $prefix + $serialNumber
 
     # Renommer l'ordinateur avec le nouveau nom
-    Rename-Computer -NewName $newComputerName -Force -Restart
+    Rename-Computer -NewName $newComputerName #-Force -Restart
 }
 ````
