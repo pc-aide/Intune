@@ -34,29 +34,28 @@ $isAdmin = [bool]([System.Security.Principal.WindowsIdentity]::GetCurrent().Grou
 if (-not $isAdmin) {
     $scriptPath = $MyInvocation.MyCommand.Definition
     Start-Process "powershell" -ArgumentList "-NoProfile -ExecutionPolicy Bypass -File '$scriptPath'" -Verb RunAs
-    return
-}
-
-# Continuer avec le script restant
-$computerSystem = Get-WmiObject Win32_ComputerSystem
-$model = $computerSystem.Model
-$bios = Get-WmiObject Win32_BIOS
-$serialNumber = $bios.SerialNumber
-
-# Variable pour stocker le préfixe
-$prefix = ""
-
-if ($model -like '*laptop*' -or $model -like '*notebook*' -or $model -like '*surface pro*') {
-    $prefix = "LW"  # Préfixe pour les ordinateurs portables (LW pour Laptop Windows)
-} elseif ($model -like 'nuc*') {
-    $prefix = "DW"  # Préfixe pour les ordinateurs de bureau (DW pour Desktop Windows)
 } else {
-    $prefix = "XX"  # Préfixe par défaut pour un type d'ordinateur indéterminé (peut être modifié)
+    # Continuer avec le script restant
+    $computerSystem = Get-WmiObject Win32_ComputerSystem
+    $model = $computerSystem.Model
+    $bios = Get-WmiObject Win32_BIOS
+    $serialNumber = $bios.SerialNumber
+
+    # Variable pour stocker le préfixe
+    $prefix = ""
+
+    if ($model -like '*laptop*' -or $model -like '*notebook*' -or $model -like '*surface pro*') {
+        $prefix = "LW"  # Préfixe pour les ordinateurs portables (LW pour Laptop Windows)
+    } elseif ($model -like 'nuc*') {
+        $prefix = "DW"  # Préfixe pour les ordinateurs de bureau (DW pour Desktop Windows)
+    } else {
+        $prefix = "XX"  # Préfixe par défaut pour un type d'ordinateur indéterminé (peut être modifié)
+    }
+
+    # Concaténer le préfixe avec le numéro de série pour former le nouveau nom d'ordinateur
+    $newComputerName = $prefix + $serialNumber
+
+    # Renommer l'ordinateur avec le nouveau nom
+    Rename-Computer -NewName $newComputerName -Force -Restart
 }
-
-# Concaténer le préfixe avec le numéro de série pour former le nouveau nom d'ordinateur
-$newComputerName = $prefix + $serialNumber
-
-# Renommer l'ordinateur avec le nouveau nom
-Rename-Computer -NewName $newComputerName #-Force -Restart
 ````
