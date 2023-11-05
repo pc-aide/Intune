@@ -32,8 +32,9 @@ $isAdmin = [bool]([System.Security.Principal.WindowsIdentity]::GetCurrent().Grou
 
 # Si PowerShell n'est pas exécuté en tant qu'administrateur, relancer le script avec des privilèges d'administration
 if (-not $isAdmin) {
-    Start-Process powershell -ArgumentList "-NoProfile -ExecutionPolicy Bypass -File $($MyInvocation.MyCommand.Path)" -Verb RunAs
-    Exit
+    $scriptPath = $MyInvocation.MyCommand.Definition
+    Start-Process "powershell" -ArgumentList "-NoProfile -ExecutionPolicy Bypass -File '$scriptPath'" -Verb RunAs
+    return
 }
 
 # Continuer avec le script restant
