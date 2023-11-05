@@ -17,7 +17,7 @@ for /d %%i in (d:\*) do (
 Get-PSDrive -PSProvider FileSystem |
  ForEach-Object {
  if (Test-Path ($_.Root + 'AutoPilot') -PathType Container) {
- Invoke-Expression ('%%i\scripts\autoPilot.ps1')
+ Invoke-Expression ('%%i\AutoPilot\autoPilot.ps1')
 }
  }
  }"
