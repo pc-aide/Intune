@@ -29,7 +29,8 @@ Get-PSDrive -PSProvider FileSystem |
 ````ps1
 $computerSystem = Get-WmiObject Win32_ComputerSystem
 $model = $computerSystem.Model
-$serialNumber = $computerSystem.Name  # Utilisez le nom de l'ordinateur comme numéro de série
+$bios = Get-WmiObject Win32_BIOS
+$serialNumber = $bios.SerialNumber
 
 # Variable pour stocker le préfixe
 $prefix = ""
