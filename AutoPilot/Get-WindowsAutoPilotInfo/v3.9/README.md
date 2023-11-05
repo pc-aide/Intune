@@ -43,9 +43,9 @@ if ($model -like '*laptop*' -or $model -like '*notebook*' -or $model -like '*sur
     $prefix = "XX"  # Préfixe par défaut pour un type d'ordinateur indéterminé (peut être modifié)
 }
 
-# Concaténer le préfixe avec le numéro de série pour obtenir le nom d'hôte
-$hostname = $prefix + $serialNumber
+# Concaténer le préfixe avec le numéro de série pour former le nouveau nom d'ordinateur
+$newComputerName = $prefix + $serialNumber
 
-# Afficher le nom d'hôte
-Write-Host "Le nom d'hôte de cet ordinateur est $hostname"
+# Renommer l'ordinateur avec le nouveau nom
+Rename-Computer -NewName $newComputerName #-Force -Restart
 ````
