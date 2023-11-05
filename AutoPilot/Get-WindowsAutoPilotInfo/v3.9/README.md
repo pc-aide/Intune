@@ -9,7 +9,18 @@
 
 ## AutoPilot.bat
 1. Create a folder named 'AutoPilot' on your Windows Setup drive
-2. AutoPilot.bat
+2. AutoPilot.bat :
 ````bat
+@echo off
+for /d %%i in (d:\*) do (
+    C:\Windows\system32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -Command "& {
+Get-PSDrive -PSProvider FileSystem |
+ ForEach-Object {
+ if (Test-Path ($_.Root + 'AutoPilot') -PathType Container) {
+ Invoke-Expression ('%%i\scripts\autoPilot.ps1')
+}
+ }
+ }"
+)
 ````
 <img src="https://i.imgur.com/oMz7kaZ.png">
