@@ -24,3 +24,27 @@ Get-PSDrive -PSProvider FileSystem |
 )
 ````
 <img src="https://i.imgur.com/oMz7kaZ.png">
+
+3. AutoPilot.ps1
+````ps1
+$computerSystem = Get-WmiObject Win32_ComputerSystem
+$manufacturer = $computerSystem.Manufacturer
+$model = $computerSystem.Model
+
+if ($manufacturer -eq "Lenovo") {
+    $computerProduct = Get-WmiObject Win32_ComputerSystemProduct
+    $lenovoModel = $computerProduct.Version
+
+    if ($lenovoModel -like 'nuc*') {
+        Write-Host "Cet ordinateur est un ordinateur de bureau Lenovo."
+    } else {
+        Write-Host "Cet ordinateur Lenovo a un modèle indéterminé."
+    }
+} elseif ($model -like '*laptop*' -or $model -like '*notebook*') {
+    Write-Host "Cet ordinateur est un ordinateur portable."
+} elseif ($model -like 'nuc*') {
+    Write-Host "Cet ordinateur est un ordinateur de bureau."
+} else {
+    Write-Host "Type d'ordinateur indéterminé."
+}
+````
