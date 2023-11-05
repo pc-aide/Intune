@@ -27,6 +27,16 @@ Get-PSDrive -PSProvider FileSystem |
 
 3. AutoPilot.ps1
 ````ps1
+# Vérifier si PowerShell est exécuté avec des privilèges d'administration
+$isAdmin = [bool]([System.Security.Principal.WindowsIdentity]::GetCurrent().Groups -match "S-1-5-32-544")
+
+# Si PowerShell n'est pas exécuté en tant qu'administrateur, relancer le script avec des privilèges d'administration
+if (-not $isAdmin) {
+    Start-Process powershell -ArgumentList "-NoProfile -ExecutionPolicy Bypass -File $($MyInvocation.MyCommand.Path)" -Verb RunAs
+    Exit
+}
+
+# Continuer avec le script restant
 $computerSystem = Get-WmiObject Win32_ComputerSystem
 $model = $computerSystem.Model
 $bios = Get-WmiObject Win32_BIOS
@@ -47,5 +57,5 @@ if ($model -like '*laptop*' -or $model -like '*notebook*' -or $model -like '*sur
 $newComputerName = $prefix + $serialNumber
 
 # Renommer l'ordinateur avec le nouveau nom
-Rename-Computer -NewName $newComputerName #-Force -Restart
+Rename-Computer -NewName $newComputerName -Force -Restart
 ````
