@@ -7,9 +7,13 @@
 
 ---
 
-## AutoPilot.bat
-1. Create a folder named 'AutoPilot' on your Windows Setup drive
-2. AutoPilot.bat :
+## AutoPilot
+0. Files :
+
+<img src="https://i.imgur.com/l2rOn0y.png">
+   
+2. Create a folder named 'AutoPilot' on your Windows Setup drive
+3. AutoPilot.bat :
 ````bat
 @echo off
 for /d %%i in (d:\*) do (
@@ -23,7 +27,6 @@ Get-PSDrive -PSProvider FileSystem |
  }"
 )
 ````
-<img src="https://i.imgur.com/oMz7kaZ.png">
 
 3. [Get-WindowsAutoPilotInfo.ps1](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo/3.9/Content/Get-WindowsAutopilotInfo.ps1)
 
