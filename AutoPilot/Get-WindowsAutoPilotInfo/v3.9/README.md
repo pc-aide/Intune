@@ -57,5 +57,5 @@ if ($model -like '*laptop*' -or $model -like '*notebook*' -or $model -like '*sur
 $newComputerName = $prefix + $serialNumber
 
 # Renommer l'ordinateur avec le nouveau nom
-Rename-Computer -NewName $newComputerName -Force -Restart
+Rename-Computer -NewName $newComputerName #-Force -Restart
 ````
